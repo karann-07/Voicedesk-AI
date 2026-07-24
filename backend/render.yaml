@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: voicedesk-backend
+    runtime: java
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/voicedesk-backend-1.0.0.jar
+    envVars:
+      - key: ASSEMBLYAI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGIN
+        sync: false
+    healthCheckPath: /api/process/health
