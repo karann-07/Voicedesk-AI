@@ -9,8 +9,8 @@ Users can record live or upload audio files, then get AI-formatted output ready 
 
 | | Link |
 |---|---|
-| Frontend | [voicedesk-ai.vercel.app](https://voicedesk-ai.vercel.app) |
-| Backend | [voicedesk-backend.onrender.com](https://voicedesk-backend.onrender.com/api/process/health) |
+| Frontend | [voicedesk-ai.vercel.app](https://voicedesk-ai-two.vercel.app/) |
+| Backend | [voicedesk-backend.onrender.com](https://voicedesk-backend.onrender.com) |
 
 ---
 
