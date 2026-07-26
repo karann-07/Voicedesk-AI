@@ -7,7 +7,10 @@ Users can record live or upload audio files, then get AI-formatted output ready 
 
 ## 🌐 Live Demo
 
-**MVP Demo:** [Add your deployed app URL here]
+| | Link |
+|---|---|
+| Frontend | [voicedesk-ai.vercel.app](https://voicedesk-ai.vercel.app) |
+| Backend | [voicedesk-backend.onrender.com](https://voicedesk-backend.onrender.com/api/process/health) |
 
 ---
 
@@ -36,7 +39,7 @@ Users can record live or upload audio files, then get AI-formatted output ready 
 
 ### 1) Clone
 ```bash
-git clone https://github.com/YOUR_USERNAME/voicedesk.git
+git clone https://github.com/karann-07/Voicedesk-AI.git
 cd voicedesk
 ```
 
@@ -74,7 +77,7 @@ Frontend runs on: `http://localhost:5173`
 
 ---
 
-## 🧱 Architecture Snapshot
+## 🧱 Architecture
 
 ```text
 +--------------------------------------------------+
@@ -120,3 +123,35 @@ Frontend runs on: `http://localhost:5173`
 |                                                  |
 +--------------------------------------------------+
 ```
+
+---
+
+## 🔐 Environment Variables
+
+### Backend
+| Variable | Description |
+|---|---|
+| `ASSEMBLYAI_API_KEY` | AssemblyAI key for transcription |
+| `GROQ_API_KEY` | Groq key for document formatting |
+| `ALLOWED_ORIGIN` | Frontend URL for CORS in production |
+
+### Frontend
+| Variable | Description |
+|---|---|
+| `VITE_API_BASE_URL` | Backend base URL |
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] Editable output before PDF export
+- [ ] Native Save As dialog for PDF download
+- [ ] Auto retry on API timeout
+- [ ] Multiple PDF export styles
+- [ ] User accounts and document history
+
+---
+
+## 📝 License
+
+MIT License
